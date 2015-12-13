@@ -1,7 +1,7 @@
 var skills = ["awesomeness","programming","teaching"];
 
 var bio = {
-	"name": "Stephen Shilalee",
+	"name": "Stephen Shilaleee",
 	"role": "Front End Designer",
 	"contacts": {
 		"phone": "845-323-2776",
