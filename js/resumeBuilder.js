@@ -1,7 +1,7 @@
 var skills = ["awesomeness","programming","teaching"];
 
 var bio = {
-	"name": "Stephen Shilaleee",
+	"name": "Stephen Shilale",
 	"role": "Front End Designer",
 	"contacts": {
 		"phone": "845-323-2776",
@@ -97,9 +97,9 @@ if(bio.skills.length > 0) {
 
 	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
 	$("#skills").append(formattedSkill);
-	HTMLskills.replace("%data%", bio.skills[1]);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[1]);
 	$("#skills").append(formattedSkill);
-	HTMLskills.replace("%data%", bio.skills[2]);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[2]);
 	$("#skills").append(formattedSkill);
 }
 
