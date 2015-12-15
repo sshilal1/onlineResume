@@ -7,12 +7,12 @@ var bio = {
 		"phone": "845-323-2776",
 		"email": "sshilal1@binghamton.edu",
 		"github": "sshilal1",
-		"linkedin": "/in/stephen-shilale-10237169",
+		"linkedin": "https://www.linkedin.com/in/stephen-shilale-10237169",
 		"location": "New City, NY"
 	},
 	"welcomeMessage": "I am a hard-working, motivated individual with a vast knowledge of technology looking to apply creativity to technology related issues.",
 	"skills": [
-		"Powershell","HTML/CSS","teaching", "lambing"
+		"C","C#","Javascript","VisualBasic","Powershell","HTML/CSS","LabView","UNIX/Linux based systems"
 	],
 	"biopic": "images/shil.jpg"
 }
@@ -71,6 +71,11 @@ var work = {
 
 var projects = {
 	"projects": [
+		{
+			"title": "HTML resume",
+			"dates": "2015",
+			"description": "Created an online version of my resume, to be hosted soon"
+		},
 		{
 			"title": "Solar Energy Generation Dashboard",
 			"dates": "2015",
