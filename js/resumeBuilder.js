@@ -7,14 +7,14 @@ var bio = {
 		"phone": "845-323-2776",
 		"email": "sshilal1@binghamton.edu",
 		"github": "sshilal1",
-		"linkedin": "https://www.linkedin.com/in/stephen-shilale-10237169",
+		"linkedin": "/in/stephen-shilale-10237169",
 		"location": "New City, NY"
 	},
 	"welcomeMessage": "I am a hard-working, motivated individual with a vast knowledge of technology looking to apply creativity to technology related issues.",
 	"skills": [
 		"Powershell","HTML/CSS","teaching", "lambing"
 	],
-	"biopic": "images/fry.jpg"
+	"biopic": "images/shil.jpg"
 }
 
 var education = {
@@ -86,8 +86,8 @@ var projects = {
 
 $("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
 $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
-$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 $("#header").append(HTMLbioPic.replace("%data%", bio.biopic));
+$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
 
 $("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.phone));
 $("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
