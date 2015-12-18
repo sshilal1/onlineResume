@@ -25,16 +25,16 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
+  font-size: 50px;
+  color: #00cc98;
   line-height: 48px;
   display: inline;
 }
 
 h2 {
   font-weight: bold;
-  font-size: 24px;
-  color: #999;
+  font-size: 28px;
+  color: #00cc98;
   line-height: 29px;
   padding: 10px;
 }
@@ -101,7 +101,7 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #00cc98;
   display: none;
 }
 
@@ -110,7 +110,7 @@ a {
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #00cc98;
 }
 
 .white-text {
