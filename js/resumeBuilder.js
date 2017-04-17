@@ -24,16 +24,16 @@ var education = {
 			"location": "Binghamton, NY",
 			"degree": "Bachelors of Science",
 			"major": ["Computer Engineering"],
-			"dates": 2015,
+			"dates": "2015",
 			"url": "http://binghamton.edu"
 		}
 	],
 	"onlineCourses": [
 		{
-			"title": "JavaScript Syntax",
+			"title": "Front End Development",
 			"school": "Udacity",
-			"dates": 2015,
-			"url": "http://www.udacity.com/course/ud804"
+			"dates": "2015-2016",
+			"url": "http://www.udacity.com/"
 		}
 	]
 }
@@ -72,6 +72,14 @@ var work = {
 var projects = {
 	"projects": [
 		{
+			"title": "T-E-Pitch Card Game",
+			"dates": "2016-2017",
+			"description": "Designed an online card game called Pitch",
+			"sub-description" : "Pitch is an interactive card game I created with Javascript, HTML5/CSS3, and SQL",
+			"images": "",
+			"url": "www.tepitch.com"
+		},
+		{
 			"title": "HTML resume",
 			"dates": "2015",
 			"description": "Created an online version of my resume, to be hosted soon",
@@ -80,13 +88,7 @@ var projects = {
 		{
 			"title": "Solar Energy Generation Dashboard",
 			"dates": "2015",
-			"description": "Designed and built a touch screen dashboard displaying relevant solar information from the engineering building’s solar panel array on the roof.",
-			"images": ""
-		},
-		{
-			"title": "FPGA Basys Board Interface",
-			"dates": "2014",
-			"description": "Created a robot based on an FPGA microcontroller and used motors, light snesors, and IR communication to demonstrate different functions",
+			"description": "Designed and a touch screen dashboard displaying relevant solar information from the engineering building’s solar panel array on the roof.",
 			"images": ""
 		}
 	]
