@@ -10,7 +10,7 @@ var bio = {
 		"linkedin": "https://www.linkedin.com/in/stephen-shilale-10237169",
 		"location": "New City, NY"
 	},
-	"welcomeMessage": "I am a hard-working, motivated individual with a vast knowledge of technology looking to apply creativity to technology related issues.",
+	"welcomeMessage": "I am a hard-working, motivated individual with a vast knowledge of technology looking to apply creativity to critical tech problems",
 	"skills": [
 		"C","C#","Javascript","VisualBasic","Powershell","HTML/CSS","LabView","UNIX/Linux based systems"
 	],

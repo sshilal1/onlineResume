@@ -12,6 +12,12 @@ h6 {
   padding:0;
   margin:0;
   font-family: "Roboto", sans-serif;
+	color: #555;
+}
+
+.content-box {
+	margin: 20px;
+	box-shadow: #e4e4e4 2px 2px;
 }
 
 .clear-fix {
@@ -26,7 +32,7 @@ h6 {
 
 h1 {
   font-size: 50px;
-  color: #00cc98;
+  color: #5a5490;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +40,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 28px;
-  color: #00cc98;
+  color: #5a5490;
   line-height: 29px;
   padding: 10px;
 }
@@ -81,21 +87,18 @@ h5 {
 
 p {
   font-size: 14px;
-  color: #333;
   line-height: 21px;
 }
 
 a {
   color: #1199c3;
   text-decoration: none;
-  margin-top: 10px;
   display: block;
 }
 
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
   line-height: 28px;
   padding:25px;
 }
@@ -113,9 +116,12 @@ a {
   color: #00cc98;
 }
 
+.descriptor-text {
+	color: #5a5490;
+}
+
 .white-text {
   font-weight: bold;
-  color: #fff;
 }
 
 .gray {
@@ -130,7 +136,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: lightgrey;
 }
 
 .flex-box {
