@@ -44,8 +44,9 @@ var work = {
 			"employer": "Crestron Electronics",
 			"title": "Firmware Engineer",
 			"location": "Rockleigh, NJ",
-			"dates": "Summer 2014 - Present",
-			"description": "Developed and maintain a nightly test system containing hundreds of Digital Media units. Write programs running on control systems that communincate with Crestron products."
+			"dates": "2014 - Present",
+			"description": "Developed and maintain a nightly test system containing hundreds of Digital Media units. Write programs running on control systems that communincate with Crestron products.",
+			"images": "img.jpg"
 		},
 		{
 			"employer": "EduTek Limited",
@@ -59,14 +60,7 @@ var work = {
 			"title": "Digital Archiving Administrator",
 			"dates": "2011 - 2014",
 			"description": "Coordinated the mass digitization of the companies private and personal files into secure folders and managed the interaction between the company and DocuFree, an iron mountain style company"
-		},
-		{
-			"employer": "Lourdes Hospital",
-			"title": "IT Support Intern",
-			"dates": "Fall 2013",
-			"description": "Assisted doctors and other medical experts with computerized physician order entry"
-		}
-	]
+		}]
 }
 
 var projects = {

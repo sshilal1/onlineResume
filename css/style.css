@@ -15,9 +15,13 @@ h6 {
 	color: #555;
 }
 
+#main {
+	background-color: #bab5bf;
+}
+
 .content-box {
 	margin: 20px;
-	box-shadow: #e4e4e4 2px 2px;
+	box-shadow: #a19da8 2px 2px;
 }
 
 .clear-fix {
@@ -42,7 +46,7 @@ h2 {
   font-size: 28px;
   color: #5a5490;
   line-height: 29px;
-  padding: 10px;
+	text-shadow: #bab5bf 2px 2px 3px;
 }
 
 h3 {
@@ -88,10 +92,11 @@ h5 {
 p {
   font-size: 14px;
   line-height: 21px;
+	padding-bottom: 15px;
 }
 
 a {
-  color: #1199c3;
+  color: #e38510;
   text-decoration: none;
   display: block;
 }
@@ -177,12 +182,6 @@ span {
 
 /* Media queries to handle various device widths */
 
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
-  }
-}
-
 @media only screen and (max-width:900px) {
   .biopic {
     width: 175px;
@@ -190,27 +189,12 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
   .biopic {
     width: 150px;
   }
   .welcome-message {
     display: none;
   }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
