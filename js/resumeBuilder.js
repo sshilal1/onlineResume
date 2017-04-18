@@ -14,7 +14,7 @@ var bio = {
 	"skills": [
 		"C","C#","Javascript","VisualBasic","Powershell","HTML/CSS","LabView","UNIX/Linux based systems"
 	],
-	"biopic": "images/shil.jpg"
+	"biopic": "images/shil-sq.jpg"
 }
 
 var education = {
