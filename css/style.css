@@ -36,7 +36,7 @@ h6 {
 
 h1 {
   font-size: 50px;
-  color: #5a5490;
+  color: #00cc98;
   line-height: 48px;
   display: inline;
 }
@@ -152,6 +152,8 @@ a {
 .center-content {
   padding: 2.5% 5%;
     margin: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 ul {
