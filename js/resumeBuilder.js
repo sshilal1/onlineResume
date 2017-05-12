@@ -12,7 +12,7 @@ var bio = {
 	},
 	"welcomeMessage": "I am a hard-working, motivated individual with a vast knowledge of technology looking to apply creativity to critical tech problems",
 	"skills": [
-		"C","C#","Javascript","VisualBasic","Powershell","HTML/CSS","LabView","UNIX/Linux based systems"
+		"Javascript","HTML5/CSS3","Powershell","Node.js","PHP", "MySQL"
 	],
 	"biopic": "images/shil-sq.jpg"
 }
@@ -45,7 +45,9 @@ var work = {
 			"title": "Firmware Engineer",
 			"location": "Rockleigh, NJ",
 			"dates": "2014 - Present",
-			"description": "Developed and maintain a nightly test system containing hundreds of Digital Media units. Write programs running on control systems that communincate with Crestron products.",
+			"description": `Singularly responsible for managing the VE process for Multi-Format Switches, Blade- Based Switches, and their compatible equipment. Total of 16 products
+• Creating and executing test plans to adequately verify features across a range of Digital Media products, complying with release dates and product requirement specifications
+• Operating a nightly regression setup, validating both trunk and branch firmware builds on over 50 different devices post-release`,
 			"images": "img.jpg"
 		},
 		{
