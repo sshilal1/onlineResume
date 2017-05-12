@@ -126,6 +126,7 @@ a {
 }
 
 .white-text {
+	color: white;
   font-weight: bold;
 }
 
@@ -139,11 +140,6 @@ a {
   background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
-#header {
-  background-color: lightgrey;
-}
-
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -155,6 +151,7 @@ a {
 
 .center-content {
   padding: 2.5% 5%;
+    margin: 50px;
 }
 
 ul {
