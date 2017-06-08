@@ -15,8 +15,16 @@ h6 {
 	color: #555;
 }
 
-#main {
-	background: url('../images/blue-simple.jpg');
+#bg {
+	z-index: -1;
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+	opacity: .4;
 }
 
 .content-box {
@@ -169,7 +177,7 @@ ul {
 }
 
 img {
-  padding: 10px;
+  padding: 0;
 }
 
 span {

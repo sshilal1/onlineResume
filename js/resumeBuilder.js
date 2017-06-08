@@ -42,12 +42,27 @@ var work = {
 	"jobs": [
 		{
 			"employer": "Crestron Electronics",
-			"title": "Firmware Engineer",
+			"title": "Verification Engineer",
 			"location": "Rockleigh, NJ",
-			"dates": "2014 - Present",
-			"description": `Singularly responsible for managing the VE process for Multi-Format Switches, Blade- Based Switches, and their compatible equipment. Total of 16 products
-• Creating and executing test plans to adequately verify features across a range of Digital Media products, complying with release dates and product requirement specifications
-• Operating a nightly regression setup, validating both trunk and branch firmware builds on over 50 different devices post-release`,
+			"dates": "2015 - Present",
+			"description": [
+				{
+					"toplevel": "Work as a member of the Verification Engineering team, handling VE testing for Digital Media products",
+					"subdescript": [
+						"Singularly responsible for managing the VE process for Multi-Format Switches, Blade-Based Switches, and their compatible Audio/Video equipment. Total of 16 products",
+						"Creating and executing test plans to adequately verify features across a range of Digital Media products, complying with release dates and product requirement specifications",
+						"Operating a nightly regression setup, validating both trunk and branch firmware builds on over 50 different devices post-release",
+						"Debug firmware issues, and work with development teams to investigate, report, and verify bugs"
+					]
+				},
+				{
+					"toplevel": "Pioneered a new method of testing Crestron products through web requests",
+					"subdescript": [
+						"Wrote the firmware testing API and integrated it into our VE nightly test setup",
+						"Coded the test suite in Powershell"
+					]
+				}
+			],
 			"images": "img.jpg"
 		},
 		{
@@ -55,13 +70,21 @@ var work = {
 			"title": "Audio/Video Systems Intern",
 			"location": "mamaroneck, NY",
 			"dates": "Summer 2013",
-			"description": "Designed systems of various devices to be integrated into schools, homes, and other residential and commerical buildings."
+			"description": [
+				{
+					"toplevel": "Designed systems of various devices to be integrated into schools, homes, and other residential and commerical buildings."
+				}
+			]
 		},
 		{
 			"employer": "Michael Shilale Architects LLP.",
 			"title": "Digital Archiving Administrator",
 			"dates": "2011 - 2014",
-			"description": "Coordinated the mass digitization of the companies private and personal files into secure folders and managed the interaction between the company and DocuFree, an iron mountain style company"
+			"description": [
+				{
+					"toplevel": "Coordinated the mass digitization of the companies private and personal files into secure folders and managed the interaction between the company and DocuFree, an iron mountain style company"
+				}
+			]
 		}]
 }
 
@@ -126,8 +149,19 @@ work.display = function() {
 		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		$(".work-entry:last").append(formattedDates);
 
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-		$(".work-entry:last").append(formattedDescription);
+		for (description in work.jobs[job].description) {
+			console.log(work.jobs[job].description[description]);
+				
+			console.log("printing " + work.jobs[job].description[description].toplevel);
+			
+			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[description].toplevel);
+			$(".work-entry:last").append(formattedDescription);
+			
+			for (subscr in work.jobs[job].description[description].subdescript) {
+				var formattedDescription = HTMLworkSubDescription.replace("%data%", work.jobs[job].description[description].subdescript[subscr]);
+				$(".work-entry:last").append(formattedDescription);
+			}
+		}
 	}
 }
 
