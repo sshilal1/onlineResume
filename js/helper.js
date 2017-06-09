@@ -3,7 +3,7 @@ var HTMLheaderRole = '<span class="white-text";>%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="descriptor-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="descriptor-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"	><span class="descriptor-text">email</span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"	><span class="descriptor-text">email</span><img src="images/linkedin-sprite.png"></img><span class="white-text">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="descriptor-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="descriptor-text">github</span><span class="white-text">%data%</span></li>';
 var HTMLlinkedin = '<li class="flex-item"><a class="descriptor-text" href="%data%">linkedIn</a></li>';
