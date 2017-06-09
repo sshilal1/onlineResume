@@ -14,7 +14,7 @@ var bio = {
 	"skills": [
 		"Javascript","HTML5/CSS3","Powershell","Node.js","PHP", "MySQL"
 	],
-	"biopic": "images/shil-sq.jpg"
+	"biopic": "images/shildog.jpg"
 }
 
 var education = {
@@ -156,7 +156,6 @@ work.display = function() {
 			
 			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description[description].toplevel);
 			$(".work-entry:last").append(formattedDescription);
-			
 			for (subscr in work.jobs[job].description[description].subdescript) {
 				var formattedDescription = HTMLworkSubDescription.replace("%data%", work.jobs[job].description[description].subdescript[subscr]);
 				$(".work-entry:last").append(formattedDescription);

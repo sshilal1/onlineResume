@@ -3,7 +3,7 @@ var HTMLheaderRole = '<span class="white-text";>%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="descriptor-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="descriptor-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="descriptor-text">email</span><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"	><span class="descriptor-text">email</span><span class="white-text">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="descriptor-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><span class="descriptor-text">github</span><span class="white-text">%data%</span></li>';
 var HTMLlinkedin = '<li class="flex-item"><a class="descriptor-text" href="%data%">linkedIn</a></li>';
@@ -22,7 +22,7 @@ var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<h3><br>%data%</h3>';
-var HTMLworkSubDescription = '<h5>%data%</h5>';
+var HTMLworkSubDescription = '<li>%data%</li>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a href="#">%data%</a>';
