@@ -137,7 +137,7 @@ a {
 }
 
 .white-text {
-	color: blue;
+	color: #5484b7;
   font-weight: bold;
 }
 
@@ -176,7 +176,6 @@ ul {
   padding: 10px;
   width: 200px;
   height: 200px;
-  display: none;
 	border-radius: 200px;
 }
 
@@ -203,12 +202,12 @@ span {
     width: 175px;
 	height: 175px;
   }
+  #topContacts {
+	flex-direction: row;
+  }
 }
 
 @media only screen and (max-width: 750px) {
-  .biopic {
-    width: 150px;
-  }
   .welcome-message {
     display: none;
   }
