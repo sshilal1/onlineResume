@@ -2,11 +2,11 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span class="white-text";>%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="descriptor-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="descriptor-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"	><span class="descriptor-text">email</span><img src="images/linkedin-sprite.png"></img><span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><img class="logo-sprite" src="images/mobile-sprite.png"><span class="white-text">%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><img class="logo-sprite" src="images/email-sprite.png"><span class="white-text">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="descriptor-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="descriptor-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLlinkedin = '<li class="flex-item"><a class="descriptor-text" href="%data%">linkedIn</a></li>';
+var HTMLgithub = '<li class="flex-item"><a href="%data%"><img class="logo-sprite" src="images/github-sprite.png"></a></li>';
+var HTMLlinkedin = '<li class="flex-item"><a href="%data%"><img class="logo-sprite" src="images/linkedin-sprite-c.png"></img></a></li>';
 var HTMLblog = '<li class="flex-item"><span class="descriptor-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="descriptor-text">location</span><span class="white-text">%data%</span></li>';
 
