@@ -28,7 +28,6 @@ h6 {
 
 .content-box {
 	margin: 20px;
-	box-shadow: #a19da8 2px 2px;
 }
 
 .clear-fix {
@@ -47,6 +46,7 @@ h1 {
   display: inline;
   font-family: 'Kavoon', cursive;
 	color: #044d9b;
+	text-shadow: black 2px 2px;
 }
 
 h2 {
@@ -141,12 +141,6 @@ a {
   font-weight: bold;
 }
 
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
-}
-
 .dark-gray {
   background-color: #4a4a4a;
 }
@@ -162,7 +156,7 @@ a {
 
 .center-content {
   padding: 2.5% 5%;
-    margin: 50px;
+    margin: 20px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
