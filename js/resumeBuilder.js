@@ -5,7 +5,7 @@ var bio = {
 	"role": "Front End Designer",
 	"contacts": {
 		"phone": "845-323-2776",
-		"email": "sshilal1@binghamton.edu",
+		"email": "stephen.shilale@gmail.com",
 		"github": "http://github.com/sshilal1",
 		"linkedin": "https://www.linkedin.com/in/stephen-shilale-10237169",
 		"location": "New City, NY"
@@ -93,8 +93,27 @@ var projects = {
 		{
 			"title": "T-E-Pitch Card Game",
 			"dates": "2016-2017",
-			"description": "Designed an online card game called Pitch",
-			"sub-description" : "Pitch is an interactive card game I created with Javascript, HTML5/CSS3, and SQL",
+			"description": [
+				{
+					"toplevel": "An online multiplayer card game",
+					"subdescript": [
+						"Wrote a real time online game engine in javascript, managing both the back and front end",
+						"Deployed on an Amazon EC2 cloud server"
+					]
+				}
+			],
+			"skills": {
+				"Javascript": 10,
+				"Html": 10,
+				"Css": 10,
+				"Node.Js": 9,
+				"Express": 7,
+				"Socket.io": 8,
+				"jQuery": 9,
+				"AWS EC2": 7,
+				"Git": 6,
+				"Npm": 6
+			},
 			"images": "",
 			"url": "www.tepitch.com"
 		},
@@ -116,16 +135,29 @@ var projects = {
 bio.display = function() {
 	$("#header").prepend(HTMLheaderRole.replace("%data%", bio.role));
 	$("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
-	$("#headerBox").append(HTMLbioPic.replace("%data%", bio.biopic));
-	$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
+	$("#headerBox").prepend(HTMLbioPic.replace("%data%", bio.biopic));
 
 	$("#topContacts").append(HTMLmobile.replace("%data%", bio.contacts.phone));
 	$("#topContacts").append(HTMLemail.replace("%data%", bio.contacts.email));
 	$("#topContacts").append(HTMLgithub.replace("%data%", bio.contacts.github));
 	$("#topContacts").append(HTMLlinkedin.replace("%data%", bio.contacts.linkedin));
-	$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
 	
-	if(bio.skills.length > 0) {
+	$( "#mobile-img" ).mouseenter( function() {
+		$("#mobile-num").show()
+	}).mouseleave( function() {
+		$("#mobile-num").hide() 
+	});
+	
+	$( "#email-img" ).mouseenter( function() {
+		$("#email-addr").show()
+	}).mouseleave( function() {
+		$("#email-addr").hide() 
+	});
+	
+	//$("#header").append(HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage));
+	//$("#topContacts").append(HTMLlocation.replace("%data%", bio.contacts.location));
+	
+	/*if(bio.skills.length > 0) {
 		$("#header").append(HTMLskillsStart);
 	
 		for (skill in bio.skills) {
@@ -133,7 +165,7 @@ bio.display = function() {
 			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 			$("#skills").append(formattedSkill);
 		}
-	}
+	}*/
 }
 
 work.display = function() {
@@ -209,33 +241,3 @@ bio.display();
 work.display();
 projects.display();
 education.display();
-
-function locationizer(work_obj) {
-	var locationArray = [];
-
-	for (job in work_obj.jobs) {
-		var newLocation = work_obj.jobs[job].location;
-		locationArray.push(newLocation);
-	}
-
-	return locationArray;
-}
-
-function inName(name) {
-	name = name.trim().split(" ");
-	console.log(name);
-	name[1] = name[1].toUpperCase();
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-
-	return name[0] +" "+name[1];
-}
-
-$("#mapDiv").append(googleMap);
-
-$(document).click(function(loc) {
-	var x = loc.pageX;
-	var y = loc.pageY;
-
-	logClicks(x,y);
-});
-

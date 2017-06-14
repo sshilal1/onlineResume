@@ -2,8 +2,8 @@ var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span class="white-text";>%data%</span><hr/>';
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="descriptor-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><img class="logo-sprite" src="images/mobile-sprite.png"><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><img class="logo-sprite" src="images/email-sprite.png"><span class="white-text">%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><img id="mobile-img" class="logo-sprite" src="images/mobile-sprite.png"><div id="mobile-num" class="small-text">%data%</div></li>';
+var HTMLemail = '<li class="flex-item"><img id="email-img" class="logo-sprite" src="images/email-sprite.png"><div id="email-addr" class="small-text">%data%</div></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="descriptor-text">twitter</span><span class="white-text">%data%</span></li>';
 var HTMLgithub = '<li class="flex-item"><a href="%data%"><img class="logo-sprite" src="images/github-sprite.png"></a></li>';
 var HTMLlinkedin = '<li class="flex-item"><a href="%data%"><img class="logo-sprite" src="images/linkedin-sprite-c.png"></img></a></li>';
