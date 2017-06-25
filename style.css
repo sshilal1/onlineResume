@@ -6,10 +6,15 @@ h2 {
 	padding:30px;
 }
 
-.row {
-	margin-bottom:20px;
+.even {
+	background-color: #eee;
+	opacity: .8;
 }
 
+.odd {
+	background-color: #dbdadb;
+	opacity: .8;
+}
 
 .col-sm-4 h4 {
 	text-align: left;
