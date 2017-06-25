@@ -10,9 +10,10 @@ h2 {
 	margin-bottom:20px;
 }
 
-.col-sm-5 {
-	text-align: center;
-	text-align: -webkit-center;
+
+.col-sm-4 h4 {
+	text-align: left;
+	padding: 10px 0;
 }
 
 #bg {
@@ -36,7 +37,7 @@ h2 {
 	background-color: #1d1d1d;
 	opacity: .8;
 }
-.jumbotron h1 {
+.jumbotron h1, .navbar-brand h1 {
 	font-family: 'Kavoon', cursive;
 	color: #2f90c3;
 	text-shadow: black 1px 1px;
