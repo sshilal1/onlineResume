@@ -1,0 +1,224 @@
+body,
+div,
+ul,
+li,
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+	color: #555;
+}
+
+#bg {
+	z-index: -1;
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+	opacity: .4;
+}
+
+.content-box {
+	margin: 20px;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 48px;
+  display: inline;
+  font-family: 'Kavoon', cursive;
+	color: #044d9b;
+	text-shadow: black 2px 2px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #5a5490;
+  line-height: 29px;
+	text-shadow: #bab5bf 2px 2px 3px;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  padding:15px 5%;
+
+}
+
+#headerBox {
+	justify-content: flex-start;
+}
+
+#mobile-num, #email-addr {
+	display: none;
+}
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+	padding-bottom: 15px;
+}
+
+a {
+  color: #e38510;
+  text-decoration: none;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+  padding:25px;
+}
+
+#skills-h3 {
+  color: #00cc98;
+  display: none;
+}
+
+.orange {
+  background-color: #f5ae23;
+}
+
+.orange-text {
+  color: #00cc98;
+}
+
+.descriptor-text {
+	color: #5a5490;
+}
+
+.small-text {
+	color: #5484b7;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.dark-gray {
+  background-color: #4a4a4a;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+    margin: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+	border-radius: 200px;
+}
+
+img {
+  padding: 0;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+.logo-sprite {
+	height:35px;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+	height: 175px;
+  }
+  #topContacts {
+	flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .welcome-message {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
