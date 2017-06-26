@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/sshilal1/onlineResume#readme",
   "dependencies": {
-    "jade": "^1.11.0"
+    "express": "^4.15.3",
+    "jade": "^1.11.0",
+    "nodemon": "^1.11.0"
   }
 }
