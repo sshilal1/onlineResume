@@ -29,9 +29,9 @@ var favorites = {
   "JS, HTML, CSS": 10,
   "jQuery": 10,
   "Socket.io": 10,
+  "Node": 10,
   "InteractJS": 9,
   "FlexBox": 9,
-  "Node": 9,
   "Express": 9,
   "AWS EC2": 9,
   "MySQL": 7,
@@ -46,6 +46,7 @@ var neighborhoodMap = {
   "Knockout": 10,
   "Ajax": 9,
   "Git/Github": 9,
+  "Google Dev Tools": 9,
   "Google Maps API": 7,
   "Yelp API": 7,
 }
@@ -76,6 +77,7 @@ var draftKit = {
   "jQuery": 9,
   "MySQL": 9,
   "JSX": 9,
+  "More as Developing!": 10
 }
 
 var style = "grey-anim";
