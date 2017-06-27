@@ -1,0 +1,55 @@
+.sport {
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-start;
+}
+
+.sport-title {
+  padding:10px;
+  display: flex;
+  align-self: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.column-sports {
+  display:flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  height: 250px;
+  padding-left: 40px;
+}
+
+.sbars-grey-anim {
+  display:flex;
+  margin: 10px 0;
+  padding-bottom: 4px;
+}
+
+.bar-grey-anim {
+  align-self:flex-end;
+  background: #b8b6b6;
+  margin:.5px;
+  width:3px;
+}
+
+.fill-grey-anim {
+  background: black;
+}
+
+.b1 {
+  height:4px;
+}
+.b2 {
+  height:8px;
+}
+.b3 {
+  height:12px;
+}
+.b4 {
+  height:16px;
+}
+.b5 {
+  height:20px;
+}

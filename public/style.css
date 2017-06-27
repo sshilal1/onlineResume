@@ -1,0 +1,77 @@
+body {
+	padding-top: 50px;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4 , h5, p, .nav,.navbar {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+	padding:30px;
+}
+
+.even {
+	background-color: #eee;
+	opacity: .8;
+}
+
+.odd {
+	background-color: #dbdadb;
+	opacity: .8;
+}
+
+.col-sm-4, h3 {
+	padding-bottom: 10px;
+}
+.col-sm-4 h3, .col-sm-4 h4, .col-sm-4 p, .col-sm-6 h3, .col-sm-6 h4, .col-sm-6 p {
+	margin-top: 0;
+	text-align: left;
+	color: black;
+}
+
+#comingsoon {
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+	border-style: dashed;
+}
+
+#bg {
+	z-index: -1;
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+	opacity: .4;
+}
+
+.logo-sprite {
+	height:35px;
+	margin:10px;
+}
+
+.webtech-img {
+	margin:10px;
+	padding:5px;
+}
+
+.jumbotron {
+	background-color: #1d1d1d;
+	opacity: .8;
+}
+.jumbotron h1, .navbar-brand h1 {
+	font-family: 'Kavoon', cursive;
+	color: #2f90c3;
+	text-shadow: black 1px 1px;
+}
+.jumbotron h2, .jumbotron h4 {
+	color: white;
+}
+
+.project-img {
+	max-width:100%;
+}

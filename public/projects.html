@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stephen Shilale: Web Developer</title>
+
+	<!-- Custom CSS -->
+	<link href="lib/servicebars.css" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kavoon|Titillium+Web" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<img src="images/grey-geo.jpg" id="bg" alt="">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Stephen Shilale</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li class="active"><a href="projects">Projects</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="blog">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid bg-4 text-center">
+	<h1 style="font-weight: bold;" ><span class="glyphicon glyphicon-briefcase"></span> My Projects</h1><br>
+	<h2> Just some of things I have worked on in my spare time.</h2>
+	<div class="row even">
+		<div class="col-sm-12">
+			<h2><a href="http://www.tepitch.com">T-E-Pitch</a></h2>
+		</div>
+		<div class="col-sm-4" style="text-align: -webkit-center;">	
+			<div style="max-width:350px;">
+				<img class="project-img" src="images/pitchdesk.jpg">
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<h3>A real-time, multiplayer card game.</h3>
+			<p>Play against your friends across the world or against logical AI!<br>
+			Started as a front end, simple js logic game. Once I got the back end implemented with <code>Node</code>, the project really began to take off.</p>
+			<p><code>Express</code> and <code>Socket.io</code> together on the back end use websockets for a simplistic and smooth multiplayer engine, efficiently handling many games at once. 
+			While using <code>jQuery</code> and <code>InteractJs</code> for a modern, responsive, and up-to-date mobile friendly front end.</p>
+			<p>Hosted on Amazons' Elastic Compute Cloud service, so fees are low and deploying updates is quick and easy </p>
+		</div>
+		<div class="col-sm-4">
+			<div id="pitch-bars" class="column-sports"></div>
+		</div>
+	</div>
+	<section>
+		<div class="row odd">
+			<div class="col-sm-12">
+				<h2><a href="http://sshilal1.github.io/neighborhoodMap/">Neighborhood Map</a></h2>
+			</div>
+			<div class="col-sm-4" style="text-align: -webkit-center;">	
+				<div style="max-width:350px;">
+					<img class="project-img" src="images/mapdesk.jpg">
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h3>An interactive map of Anchorage, Alaska - Interfacing with the Google Maps and Yelp API's</h3>
+				<p>Completed as part of the <a href="https://www.udacity.com/">Udacity</a> Front-End Nanodegree program, I used <code>Ajax</code> to make requests to the 2 APIS, and then
+				display the information cleanly and in order with <code>jQuery</code>, and <code>Knockout</code>.</p>
+				<p>This was also my first endeavor using Github, which I have come to love and use every day.</p>
+			</div>
+			<div class="col-sm-4">
+				<div id="map-bars" class="column-sports"></div>
+			</div>
+		</div>
+	</section>
+	<div class="row even">	
+		<div class="col-sm-12">
+			<h2><a href="http://sshilal1.github.io/srDesignKiosk/">Solar Array Dashboard</a></h2>
+		</div>
+		<div class="col-sm-4" style="text-align: -webkit-center;">	
+			<div style="max-width:350px;">
+				<img class="project-img" src="images/kioskdesk.jpg">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h3>A dashboard displaying information for the solar panels on the roof of the Engineering and Science Building at Binghamton University</h3>
+			<p>As team lead of our Sr. Design Project at my University, I was tasked with managing the creation and implementation of this dashboard.
+			Using Javascript Photoshop, and Bootstrap, our team created the interactive display</p>
+			<p>This was my introduction to web development, and I knew right away it was something I wanted to do</p>
+		</div>
+		<div class="col-sm-2">
+			<div id="dash-bars" class="column-sports"></div>
+		</div>
+	</div>
+	<div class="row odd">	
+		<div class="col-sm-12">
+			<h2><a href="https://github.com/sshilal1/onlineResume">This Site: My Portfolio</a></h2>
+		</div>
+		<div class="col-sm-4" style="text-align: -webkit-center;">	
+			<div style="max-width:350px;">
+				<img class="project-img" src="images/resumedesk.jpg">
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h3>Hosted on my very own Raspberry Pi<a href="https://www.raspberrypi.org/"><img style="max-width:50px" src="images/raspi-sprite.png"></a> microcomputer</h3>
+			<p>I was not going to include this project for my site, but I felt it was important to promote my love for Raspberry Pi and microcomputers</p>
+			<p>Initally planned to host on another AWS EC2 server, once I found out how easy it was to host on my Pi, I figured I'd save the money and dedicate the Pi to a full time node server!</p>
+			<p>I will have a blog post coming soon with more information on the process, so stay tuned!</p>
+		</div>
+		<div class="col-sm-2">
+			<div id="resume-bars" class="column-sports"></div>
+		</div>
+	</div>
+	<div class="row even">	
+		<div class="col-sm-12">
+			<h2>Fantasy Draft Kit: <small>Not Yet Released</small></h2>
+		</div>
+		<div class="col-sm-4" style="text-align: -webkit-center;">	
+			<div style="max-width:350px;">
+				<div class="project-img"><div id="comingsoon">Coming Soon<br>Currently In Development</div></div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<h3>A fantasy football draft kit, managed by <a href="https://facebook.github.io/react/"> React </a> and <a href="materialui.com">Material UI</a></h3>
+			<p>This application scrapes the web using <code>Cheerio</code> for fantasy football rankings and statistics.</p>
+			<p>Organize players by a filter of your choice, compare rankings, favorite your picks, and have a clear representation of stats for every season of every player.</p>
+		</div>
+		<div class="col-sm-4">
+			<div id="draft-bars" class="column-sports" style="padding:0;"></div>
+		</div>
+	</div>
+</div>
+
+<div class="jumbotron" style="margin: 0;">
+  <div class="container text-center">
+	<h4><span class="glyphicon glyphicon-copyright-mark"></span> Stephen Shilale</h4>
+	<h4>2017</h4>
+  </div>
+</div>
+
+</body>
+
+    <!-- My Service Bars -->
+	<script src="lib/servicebars.js"></script>    
+
+</html>
