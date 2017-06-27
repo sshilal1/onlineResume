@@ -45,6 +45,7 @@ var neighborhoodMap = {
   "jQuery": 10,
   "Knockout": 10,
   "Ajax": 9,
+  "Git/Github": 9,
   "Google Maps API": 7,
   "Yelp API": 7,
 }
@@ -54,8 +55,15 @@ var dashBoard = {
   "HTML": 10,
   "CSS": 10,
   "Bootstrap": 9,
-  "PhotoShop": 7,
-  "Dreamweaver": 7,
+  "PhotoShop": 7
+}
+
+var resume = {
+  "JS, HTML, CSS": 10,
+  "Raspberry Pi": 10,
+  "Bootstrap": 10,
+  "Node": 10,
+  "Glyphicons": 9
 }
 
 var draftKit = {
@@ -71,9 +79,10 @@ var draftKit = {
 }
 
 var style = "grey-anim";
-var locations = ["pitch-bars","map-bars","dash-bars","draft-bars"];
+var locations = ["pitch-bars","map-bars","dash-bars","resume-bars","draft-bars"];
 
 makeBars(favorites,locations[0]);
 makeBars(neighborhoodMap,locations[1]);
 makeBars(dashBoard,locations[2]);
-makeBars(draftKit,locations[3]);
+makeBars(resume,locations[3]);
+makeBars(draftKit,locations[4]);
