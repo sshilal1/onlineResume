@@ -1,3 +1,3 @@
 # Online Resume
 
-[Live](stephenshilale.me)
+[Live](http://www.stephenshilale.me)
