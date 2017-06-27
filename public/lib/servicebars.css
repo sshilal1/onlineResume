@@ -18,6 +18,7 @@
   flex-direction:column;
   flex-wrap: wrap;
   height: 250px;
+  padding-left: 40px;
 }
 
 .sbars-grey-anim {
