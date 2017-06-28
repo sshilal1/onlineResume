@@ -4,6 +4,7 @@
   "description": "my online resume, to be hosted on aws soon",
   "main": "index.js",
   "scripts": {
+	"start": "nodemon app.js",
     "test": "node app.js"
   },
   "repository": {
