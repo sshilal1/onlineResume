@@ -3,3 +3,4 @@ dist/bundle.js
 .idea/*
 yarn.lock
 *.trace
+npm-debug.log
