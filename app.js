@@ -8,6 +8,18 @@ app.use(express.static("public", {
 }));
 */
 
+// function to generate sub-article wordpress blog posts
+function createArticle(post) {
+	
+	var articleStr = '<article style="background-color: #dbdadb;"><h2>' + post.title + '</h2>';
+	articleStr += '<div class="row"><p style="padding:10px;"><span class="glyphicon glyphicon-time"></span>' + post.date + '</p></div>';
+	articleStr += '<br><p style="padding:10px;">' + post.content.substring(0,500) + '......</p>';
+	articleStr += '<p class="text-right"><a href="' + post.link + '" class="text-right">continue reading...</a></p>';
+	articleStr += '</article>';
+	
+	return articleStr;
+}
+
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
@@ -37,17 +49,13 @@ app.get('/blog', function (req, res) {
 		for (post of posts) {
 			if (post.status == "publish") {
 				console.log (post.title);
-				/*post.
-					content, date, modified, link
-				*/
-				// Here we want to create the article html string
-				blogPostsHtmlString += post.title; //createArticle(post);
+				blogPostsHtmlString += createArticle(post);
 			}
 		}
 		
 		var fs = require('fs');
 		
-		fs.readFile('public/blog.html', 'utf8', function (err,data) {
+		fs.readFile('public/blogtemp.html', 'utf8', function (err,data) {
 			if (err) {
 				return console.log(err);
 			}
