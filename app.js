@@ -24,8 +24,6 @@ app.get('/about', function (req, res) {
 
 app.get('/blog', function (req, res) {
 	
-	res.sendFile('public/blog.html', { root : __dirname });
-	
 	var wordpress = require( "wordpress" );
 	var client = wordpress.createClient({
 		url: "https://stephenshilale.wordpress.com/",
@@ -35,14 +33,32 @@ app.get('/blog', function (req, res) {
 
 	client.getPosts(function( error, posts ) {
 		console.log( "Found " + posts.length + " posts!" );
+		var blogPostsHtmlString = "";
 		for (post of posts) {
 			if (post.status == "publish") {
 				console.log (post.title);
 				/*post.
 					content, date, modified, link
 				*/
+				// Here we want to create the article html string
+				blogPostsHtmlString += post.title; //createArticle(post);
 			}
 		}
+		
+		var fs = require('fs');
+		
+		fs.readFile('public/blog.html', 'utf8', function (err,data) {
+			if (err) {
+				return console.log(err);
+			}
+			
+			var result = data.replace('<!--%articles%-->', blogPostsHtmlString);
+
+			fs.writeFile('public/blog.html', result, 'utf8', function (err) {
+				if (err) return console.log(err);
+				else res.sendFile('public/blog.html', { root : __dirname });
+			});
+		});
 	});
 })
 
