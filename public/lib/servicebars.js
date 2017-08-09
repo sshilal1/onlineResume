@@ -68,16 +68,16 @@ var resume = {
 }
 
 var draftKit = {
-  "JS, HTML, CSS": 10,
+  "JavaScript ES6": 10,
   "React": 10,
+  "Flux Architecture": 10,
+  "JSX": 10,
   "Material UI": 10,
   "Node": 10,
-  "Cheerio": 10,
-  "Bootstrap": 9,
-  "jQuery": 9,
+  "Babel": 9,
+  "Webpack": 9,
+  "Cheerio": 9,
   "MySQL": 9,
-  "JSX": 9,
-  "More as Developing!": 10
 }
 
 var style = "grey-anim";
