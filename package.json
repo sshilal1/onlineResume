@@ -4,7 +4,7 @@
   "description": "my online resume, to be hosted on aws soon",
   "main": "index.js",
   "scripts": {
-	"start": "nodemon app.js",
+    "start": "nodemon app.js",
     "test": "node app.js"
   },
   "repository": {
@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/sshilal1/onlineResume#readme",
   "dependencies": {
+    "chai": "^4.1.2",
     "express": "^4.15.3",
     "jade": "^1.11.0",
+    "mocha": "^3.5.0",
     "nodemon": "^1.11.0",
     "wordpress": "^1.4.0"
   }
