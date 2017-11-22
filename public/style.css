@@ -41,6 +41,10 @@ h2 {
 	border-style: dashed;
 }
 
+.imgbox {
+	max-width: 350px;
+}
+
 #bg {
 	z-index: -1;
 	position: fixed; 
