@@ -1,10 +1,12 @@
 var pcontainer = document.getElementById('projects-container');
+var alternator = 'row even';
 
 for (var project of projects) {
 
+	alternator = alternator == 'row even' ? 'row odd' : 'row even';
 	var fragment = document.createDocumentFragment();
-	var roweven = document.createElement('div');
-	roweven.className='row even';
+	var row = document.createElement('div');
+	row.className=alternator;
 
 	// Title of app
 	var col12 = document.createElement('div');
@@ -50,11 +52,11 @@ for (var project of projects) {
 	col4c.appendChild(barsbox);
 
 	// Append it all
-	roweven.appendChild(col12);
-	roweven.appendChild(col4a);
-	roweven.appendChild(col4b);
-	roweven.appendChild(col4c);
-	fragment.appendChild(roweven);
-}
+	row.appendChild(col12);
+	row.appendChild(col4a);
+	row.appendChild(col4b);
+	row.appendChild(col4c);
+	fragment.appendChild(row);
 
-pcontainer.appendChild(fragment);
+	pcontainer.appendChild(fragment);
+}
