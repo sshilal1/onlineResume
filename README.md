@@ -1,3 +1,5 @@
-# Online Resume
+# My Online Resume
+[Live](http://www.stephenshilale.com)
 
-[Live](http://www.stephenshilale.me)
+## Info
+Hosted with a Node/Express server on my Raspberry Pi
