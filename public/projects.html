@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Stephen Shilale: Web Developer</title>
+	<title>Stephen Shilale: Web Developer</title>
 
 	<!-- Custom CSS -->
 	<link href="lib/servicebars.css" rel="stylesheet">
@@ -18,83 +19,102 @@
 </head>
 
 <body>
-<img src="images/grey-geo.jpg" id="bg" alt="">
+	<img src="images/grey-geo.jpg" id="bg" alt="">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="/">Stephen Shilale</a>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-	            <span class="sr-only">Toggle navigation</span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	            <span class="icon-bar"></span>
-	        </button>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/">Stephen Shilale</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li class="active">
+						<a href="projects">Projects</a>
+					</li>
+					<li>
+						<a href="about">About</a>
+					</li>
+					<li>
+						<a href="blog">Blog</a>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="/">Home</a></li>
-				<li class="active"><a href="projects">Projects</a></li>
-				<li><a href="about">About</a></li>
-				<li><a href="blog">Blog</a></li>
-			</ul>
-		</div>
-	</div>
-</nav>
+	</nav>
 
-<div id="projects-container" class="container-fluid bg-4 text-center">
-	<h1 style="font-weight: bold;" ><span class="glyphicon glyphicon-briefcase"></span> My Projects</h1><br>
-	<h2> Just some of things I have worked on in my spare time.</h2>
+	<div id="projects-container" class="container-fluid bg-4 text-center">
+		<h1 style="font-weight: bold;">
+			<span class="glyphicon glyphicon-briefcase"></span> My Projects</h1>
+		<br>
+		<h2> Just some of things I have worked on in my spare time.</h2>
 		<div class="row odd">
 			<div class="col-sm-12">
-				<h2><a href="http://sshilal1.github.io/neighborhoodMap/">Neighborhood Map</a></h2>
+				<h2>
+					<a href="http://sshilal1.github.io/neighborhoodMap/">Neighborhood Map</a>
+				</h2>
 			</div>
-			<div class="col-sm-4" style="text-align: -webkit-center;">	
+			<div class="col-sm-4" style="text-align: -webkit-center;">
 				<div style="max-width:350px;">
 					<img class="project-img" src="images/mapdesk.jpg">
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<h3>An interactive map of Anchorage, Alaska - Interfacing with the Google Maps and Yelp API's</h3>
-				<p>Completed as part of the <a href="https://www.udacity.com/">Udacity</a> Front-End Nanodegree program, I used <code>Ajax</code> to make requests to the 2 APIS, and then
-				display the information cleanly and in order with <code>jQuery</code>, and <code>Knockout</code>.</p>
+				<p>Completed as part of the
+					<a href="https://www.udacity.com/">Udacity</a> Front-End Nanodegree program, I used
+					<code>Ajax</code> to make requests to the 2 APIS, and then display the information cleanly and in order with
+					<code>jQuery</code>, and
+					<code>Knockout</code>.</p>
 				<p>This was also my first endeavor using Github, which I have come to love and use every day.</p>
 			</div>
 			<div class="col-sm-4">
 				<div id="map-bars" class="column-sports"></div>
 			</div>
 		</div>
-	<div class="row even">	
-		<div class="col-sm-12">
-			<h2><a href="http://sshilal1.github.io/srDesignKiosk/">Solar Array Dashboard</a></h2>
-		</div>
-		<div class="col-sm-4" style="text-align: -webkit-center;">	
-			<div style="max-width:350px;">
-				<img class="project-img" src="images/kioskdesk.jpg">
+		<div class="row even">
+			<div class="col-sm-12">
+				<h2>
+					<a href="http://sshilal1.github.io/srDesignKiosk/">Solar Array Dashboard</a>
+				</h2>
+			</div>
+			<div class="col-sm-4" style="text-align: -webkit-center;">
+				<div style="max-width:350px;">
+					<img class="project-img" src="images/kioskdesk.jpg">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>A dashboard displaying information for the solar panels on the roof of the Engineering and Science Building at Binghamton
+					University</h3>
+				<p>As team lead of our Sr. Design Project at my University, I was tasked with managing the creation and implementation of
+					this dashboard. Using Javascript Photoshop, and Bootstrap, our team created the interactive display</p>
+				<p>This was my introduction to web development, and I knew right away it was something I wanted to do</p>
+			</div>
+			<div class="col-sm-2">
+				<div id="dash-bars" class="column-sports"></div>
 			</div>
 		</div>
-		<div class="col-sm-6">
-			<h3>A dashboard displaying information for the solar panels on the roof of the Engineering and Science Building at Binghamton University</h3>
-			<p>As team lead of our Sr. Design Project at my University, I was tasked with managing the creation and implementation of this dashboard.
-			Using Javascript Photoshop, and Bootstrap, our team created the interactive display</p>
-			<p>This was my introduction to web development, and I knew right away it was something I wanted to do</p>
-		</div>
-		<div class="col-sm-2">
-			<div id="dash-bars" class="column-sports"></div>
+	</div>
+	<div class="jumbotron" style="margin: 0;">
+		<div class="container text-center">
+			<h4>
+				<span class="glyphicon glyphicon-copyright-mark"></span> Stephen Shilale</h4>
+			<h4>2017</h4>
 		</div>
 	</div>
-</div>
-<div class="jumbotron" style="margin: 0;">
-  <div class="container text-center">
-	<h4><span class="glyphicon glyphicon-copyright-mark"></span> Stephen Shilale</h4>
-	<h4>2017</h4>
-  </div>
-</div>
 
 </body>
-	
-	<script src="projectsJson.js"></script>
-  <script src="projects.js"></script>
-	<script src="lib/servicebars.js"></script>
-	
+
+<script src="projectsData.js"></script>
+<script src="projects.js"></script>
+<script src="lib/servicebars.js"></script>
+
 </html>
