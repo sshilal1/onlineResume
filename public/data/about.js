@@ -5,7 +5,5 @@ var about = {
     email : "me@stephenshilale.com",
     abstract : "I build full scale, interactive web applicaitons using the newest technologies on both ends of the stack, with a focus on Javascript and ES6 features",
     year : new Date().getFullYear(),
-    header : {
-        tagline : "Full Stack Web Developer",
-    }
+    tagline : "Full Stack Web Developer"
 }
