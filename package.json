@@ -4,9 +4,10 @@
   "description": "my online resume, to be hosted on aws soon",
   "main": "index.js",
   "scripts": {
-	"start": "nodemon app.js",
+    "start": "nodemon app.js",
     "test": "node app.js",
-    "sample": "json-server public/data/about.json --port 3030"
+    "server": "json-server --watch public/data/data.json --port 3030",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm start\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "jade": "^1.11.0",
     "nodemon": "^1.11.0",
     "wordpress": "^1.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
   }
 }
