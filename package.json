@@ -7,7 +7,8 @@
     "start": "nodemon app.js",
     "test": "node app.js",
     "server": "json-server --watch public/data/data.json --port 3030",
-    "dev": "concurrently --kill-others \"npm run server\" \"npm start\""
+    "dev": "concurrently --kill-others \"npm run server\" \"npm start\"",
+    "pdf": "node resume-gen.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "express": "^4.15.3",
     "jade": "^1.11.0",
     "nodemon": "^1.11.0",
+    "pdfkit": "^0.8.3",
     "wordpress": "^1.4.0"
   },
   "devDependencies": {
