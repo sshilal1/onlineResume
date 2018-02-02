@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "node app.js",
-    "server": "json-server --watch public/data/data.json --port 3030",
+    "server": "json-server --watch public/data/data.json --port 5000",
     "dev": "concurrently --kill-others \"npm run server\" \"npm start\"",
     "pdf": "node resume-gen.js"
   },
